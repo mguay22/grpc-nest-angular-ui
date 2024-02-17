@@ -1,0 +1,8 @@
+<div class="container">
+    @for (item of items; track item) {
+        <div class="item" (click)="onItemClick(item)">
+            <app-item [name]="item.name" [quantity]="item.quantity"></app-item>
+        </div>
+    }
+    <app-create-item></app-create-item>
+</div>

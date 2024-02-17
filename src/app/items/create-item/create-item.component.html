@@ -1,0 +1,13 @@
+<form>
+    <mat-form-field class="full-width">
+        <mat-label>Item Name</mat-label>
+        <input [formControl]="name" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>Quantity</mat-label>
+        <input [formControl]="quantity" matInput>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="createItem()">Create</button>
+</form>
